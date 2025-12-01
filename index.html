@@ -1,201 +1,166 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gautier Bardi de Fourtou — AI for Space</title>
-  <meta name="description" content="Research projects in AI for space: MIT, NASA JPL, ESA, FDL." />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-<header class="top-nav">
-  <nav>
-    <a href="#home">HOME</a><span class="sep">/</span>
-    <a href="#projects">RESEARCH PROJECTS</a><span class="sep">/</span>
-    <a href="#talks">TALKS & OUTREACH</a><span class="sep">/</span>
-    <a href="#awards">AWARDS</a><span class="sep">/</span>
-    <a href="#contact">CONTACT</a>
-  </nav>
-</header>
-
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Gautier Bardi de Fourtou — AI for Space</title><meta name="description" content="Publications in AI for space science and exploration (MIT, NASA JPL, ESA, FDL, ISU)."/>
+<link rel="stylesheet" href="style.css"/></head><body>
+<header class="top-nav"><nav>
+  <a href="#home">HOME</a><span class="sep">/</span>
+  <a href="#publications">PUBLICATIONS</a><span class="sep">/</span>
+  <a href="#talks">TALKS & OUTREACH</a><span class="sep">/</span>
+  <a href="#awards">AWARDS</a>
+</nav></header>
 <main id="home" class="container">
 
-  <!-- Intro -->
-  <section class="intro intro-left-image compact">
-    <div class="intro-left">
-      <img src="assets/headshot.svg" alt="Gautier Bardi de Fourtou headshot" class="headshot small"/>
+<section class="intro intro-left-image compact">
+  <div class="intro-left"><img src="assets/headshot.svg" alt="Gautier Bardi de Fourtou headshot" class="headshot small"/></div>
+  <div class="intro-right">
+    <h1 class="name">Gautier Bardi de Fourtou</h1>
+    <p class="subtitle">AI for Space · recently visiting researcher at MIT Media Lab · NASA Jet Propulsion Laboratory</p>
+    <p class="summary">I build physics‑aware machine learning for real missions. Recent work spans lunar rover motion, solar EUV modeling, ocean remote sensing, and fiber‑optic sensing for the ISS. Previously 10+ years at Airbus (software & test). I’m now focused on doctoral‑level research in autonomy and scientific ML for space exploration.</p>
+    <p class="linkrow"><a href="https://scholar.google.com/citations?user=Dm0hKWoAAAAJ" target="_blank" rel="noopener">Google Scholar</a> ·
+    <a href="https://www.researchgate.net/profile/Gautier-Bardi-De-Fourtou" target="_blank" rel="noopener">ResearchGate</a></p>
+  </div>
+</section>
+
+<!-- Smooth auto slider with arrows (no visible scrollbar) -->
+<section class="carousel-wrap" aria-label="Featured">
+  <button class="carousel-arrow left" id="prev" aria-label="Previous">&#10094;</button>
+  <div class="carousel" id="carousel">
+    <div class="carousel-track" id="track">
+      <a href="projects/mit-fibers.html"><img src="assets/p-mit-fibers.svg" alt="MIT — Smart Fibers for ISS (AI)"></a>
+      <a href="projects/space-to-sea.html"><img src="assets/p-solitons.svg" alt="From Space to Sea — SWOT"></a>
+      <a href="projects/rover-piml.html"><img src="assets/p-rover.svg" alt="Lunar Rover — PIML & Twins"></a>
+      <a href="projects/megs-ai.html"><img src="assets/p-megsai.svg" alt="MEGS-AI — EUV from AIA"></a>
+      <a href="projects/sunerfs.html"><img src="assets/p-sunerf.svg" alt="SuNeRFs — 4D Solar Corona"></a>
+      <a href="projects/lunar-fm.html"><img src="assets/p-moonfm.svg" alt="Lunar Foundation Model"></a>
+      <a href="projects/hwo.html"><img src="assets/p-hwo.svg" alt="HWO — AI/ML"></a>
+      <a href="projects/starship-habitat.html"><img src="assets/p-starship.svg" alt="Starship → Lunar Habitat"></a>
+      <a href="projects/esa-spectra.html"><img src="assets/p-esa-spectra.svg" alt="ESA VNIR — confidential"></a>
     </div>
-    <div class="intro-right">
-      <h1 class="name">Gautier Bardi de Fourtou</h1>
-      <p class="title-role">
-        AI for Space — recent work with <span class="tag">MIT</span>, <span class="tag">NASA JPL</span>, <span class="tag">ESA</span>, <span class="tag">FDL</span>.
-      </p>
-      <p class="bio">
-        Physics‑aware ML for lunar robotics, solar SuNeRFs, and remote sensing. Former Airbus engineer (10+ yrs); M.S. AI & Robotics (MINES Paris/PSL).
-      </p>
-      <p class="contact">
-        Email: <a href="mailto:">/a> ·
-        Scholar: <a href="https://scholar.google.com/citations?user=Dm0hKWoAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-      </p>
-    </div>
-  </section>
+  </div>
+  <button class="carousel-arrow right" id="next" aria-label="Next">&#10095;</button>
+</section>
 
-  <!-- RESEARCH PROJECTS -->
-  <section id="projects" class="section">
-    <h2>Research Projects</h2>
+<section id="publications" class="section"><h2>Publications</h2>
 
-    <article class="pub project">
-      <a class="pub-thumb modal-link" href="#modal-sunerf" aria-label="Open SuNeRFs details">
-        <img src="assets/p-sunerf.svg" alt="SuNeRFs 4D solar thumbnail">
-      </a>
-      <div class="pub-body">
-        <h3 class="pub-title">SuNeRFs — 4D Model of the Solar Corona</h3>
-        <p class="pub-venue"><span class="pill">MIT</span> <span class="pill">FDL</span></p>
-        <p class="pub-summary">Multi‑view satellite images → 4D density & temperature fields.</p>
-        <p class="pub-links">
-          Outcome: <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1681814" target="_blank" rel="noopener">AGU’24 abstract</a>
-        </p>
-      </div>
-    </article>
+<div class="cat">Massachusetts Institute of Technology</div>
+<article class="pub"><a class="pub-thumb" href="projects/mit-fibers.html"><img src="assets/p-mit-fibers.svg" alt="MIT Smart Fibers"></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="projects/mit-fibers.html">Correlating entangled signals from smart fibers for the International Space Station</a></h3>
+    <p class="pub-desc">At MIT Responsive Environments (Dr. Joseph Paradiso), I develop AI architectures to correlate entangled signals captured by embedded smart fibers designed for the ISS, focusing on robust multi‑modal sensing, alignment, and interpretable inference under resource constraints.</p>
+    <p class="pub-authors"><strong>G. Bardi</strong> (visiting student researcher)</p>
+    <p class="pub-venue">MIT Media Lab — Responsive Environments, 2025.</p>
+    <p class="pub-links"><a href="https://www.media.mit.edu/groups/responsive-environments/overview/" target="_blank" rel="noopener">Lab page</a></p>
+  </div>
+</article>
 
-    <article class="pub project">
-      <a class="pub-thumb modal-link" href="#modal-solitons" aria-label="Open SWOT solitons details">
-        <img src="assets/p-solitons.svg" alt="SWOT solitons thumbnail">
-      </a>
-      <div class="pub-body">
-        <h3 class="pub-title">From Space to Sea — Internal Waves in SWOT</h3>
-        <p class="pub-venue"><span class="pill">NASA JPL</span> <span class="pill">MIT</span></p>
-        <p class="pub-summary">Automatic detection/tracking of solitons in SWOT imagery.</p>
-        <p class="pub-links">
-          Outcomes: <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1706755" target="_blank" rel="noopener">AGU’24 oral</a> ·
-          <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1655008" target="_blank" rel="noopener">AGU’24 abstract</a> ·
-          <span class="tag soft">JPL Spotlight Award</span>
-        </p>
-      </div>
-    </article>
+<div class="cat">NASA Jet Propulsion Laboratory</div>
+<article class="pub"><a class="pub-thumb" href="projects/space-to-sea.html"><img src="assets/p-solitons.svg" alt="From Space to Sea"></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="projects/space-to-sea.html">From Space to Sea: leveraging machine learning to identify ocean features in SWOT data</a></h3>
+    <p class="pub-desc">Built a CV pipeline to detect and track internal waves (solitons) in SWOT imagery to support large‑scale ocean studies; recognized with a JPL Spotlight Technology Award.</p>
+    <p class="pub-authors"><strong>G. Bardi</strong>, T. Lu, M. Archer, J. Wang</p>
+    <p class="pub-venue"><a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1706755" target="_blank" rel="noopener">American Geophysical Union (AGU), 2024 — oral</a> · <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1655008" target="_blank" rel="noopener">AGU, 2024 — abstract</a></p>
+  </div>
+</article>
 
-    <article class="pub project">
-      <a class="pub-thumb modal-link" href="#modal-rover" aria-label="Open lunar rover details">
-        <img src="assets/p-rover.svg" alt="Lunar rover PIML thumbnail">
-      </a>
-      <div class="pub-body">
-        <h3 class="pub-title">Lunar Rover Motion — Physics‑Informed ML & Twins</h3>
-        <p class="pub-venue"><span class="pill">NASA JPL</span></p>
-        <p class="pub-summary">Omniverse + FEM → physically consistent motion predictors.</p>
-        <p class="pub-links">
-          Outcomes: <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1558669" target="_blank" rel="noopener">AGU’24 abstract</a> ·
-          <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1581889" target="_blank" rel="noopener">AGU’24 abstract</a> ·
-          IAC’24 interactive
-        </p>
-      </div>
-    </article>
+<article class="pub"><a class="pub-thumb" href="projects/rover-piml.html"><img src="assets/p-rover.svg" alt="Rover PIML"></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="projects/rover-piml.html">Physics‑Informed ML and interoperable digital twins for real‑time lunar rover motion</a></h3>
+    <p class="pub-desc">Interoperable digital twins in Omniverse with FEM ground truth to train fast, physically consistent motion predictors for granular terrains and traverse planning.</p>
+    <p class="pub-authors"><strong>G. Bardi</strong>, J. Carrillo, N. Elieh Janvisloo, E. Sadler, et&nbsp;al.</p>
+    <p class="pub-venue">IEEE Aerospace Conference, 2025 — two papers · International Astronautical Congress (IAC), 2024 — interactive.</p>
+  </div>
+</article>
 
-    <article class="pub project more-item">
-      <a class="pub-thumb modal-link" href="#modal-moonfm" aria-label="Open lunar FM details">
-        <img src="assets/p-moonfm.svg" alt="Lunar foundation model thumbnail">
-      </a>
-      <div class="pub-body">
-        <h3 class="pub-title">Lunar Foundation Model — Unified Lunar Datasets</h3>
-        <p class="pub-venue"><span class="pill">FDL</span> <span class="pill">NASA</span> <span class="pill">ESA</span></p>
-        <p class="pub-summary">GRAIL, LRO/LOLA, MiniRF, Clementine → a queryable lunar FM.</p>
-        <p class="pub-links">Outcome: <a href="https://frontierdevelopmentlab.org/" target="_blank" rel="noopener">FDL program</a></p>
-      </div>
-    </article>
+<article class="pub"><a class="pub-thumb" href="projects/hwo.html"><img src="assets/p-hwo.svg" alt="HWO AI/ML"></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="projects/hwo.html">Habitable Worlds Observatory — AI/ML for mission design and data analysis</a></h3>
+    <p class="pub-desc">As part of the HWO AI working group, I contributed to the design of ML tools across two tracks: (1) enhancing mission design & operations and (2) models and tools for processing/analysis of observational data.</p>
+    <p class="pub-authors">V. Da Poian, U. Rebbapragada, S. Chien, <strong>G. Bardi</strong>, et&nbsp;al. · E. Gharib‑Nezhad, M. Ansdell, C. Garraffo‑Lu, <strong>G. Bardi</strong>, et&nbsp;al.</p>
+    <p class="pub-venue"><a href="#" target="_blank" rel="noopener">AGU, 2024 — abstract (mission design & operations)</a> · <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1581889" target="_blank" rel="noopener">AGU, 2024 — abstract (AI/ML models & tools)</a></p>
+  </div>
+</article>
 
-    <article class="pub project more-item">
-      <a class="pub-thumb modal-link" href="#modal-megsai" aria-label="Open MEGS-AI details">
-        <img src="assets/p-megsai.svg" alt="MEGS-AI thumbnail">
-      </a>
-      <div class="pub-body">
-        <h3 class="pub-title">MEGS‑AI — EUV Spectrum Estimation from AIA</h3>
-        <p class="pub-venue"><span class="pill">MIT</span></p>
-        <p class="pub-summary">Estimating EUV spectra from AIA imagery with ML.</p>
-        <p class="pub-links">Outcome: <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1681814" target="_blank" rel="noopener">AGU’24 abstract</a></p>
-      </div>
-    </article>
+<div class="cat">Frontier Development Lab</div>
+<article class="pub"><a class="pub-thumb" href="projects/megs-ai.html"><img src="assets/p-megsai.svg" alt="MEGS-AI"></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="projects/megs-ai.html">MEGS‑AI: estimating the full EUV spectrum from AIA images</a></h3>
+    <p class="pub-desc">Team project to learn EUV spectral irradiance proxies from SDO/AIA images when direct spectrograph coverage is unavailable.</p>
+    <p class="pub-authors"><strong>G. Bardi</strong>, B. Isola, R. Jarolim, B. Tremblay, A. Muñoz‑Jaramillo, et&nbsp;al.</p>
+    <p class="pub-venue"><a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1681814" target="_blank" rel="noopener">American Geophysical Union (AGU), 2024 — abstract</a> · <a href="https://fdl.ai/" target="_blank" rel="noopener">FDL (program)</a></p>
+    <p class="note">2024: Oral presentation of “MEGS‑AI…” at AGU 2024, Washington, D.C.</p>
+  </div>
+</article>
 
-    <button class="toggle" data-target="#projects" aria-expanded="false">Show more...</button>
-  </section>
+<article class="pub"><a class="pub-thumb" href="projects/sunerfs.html"><img src="assets/p-sunerf.svg" alt="SuNeRFs"></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="projects/sunerfs.html">SuNeRFs: 4D reconstruction of the solar EUV corona from multi‑view imagery</a></h3>
+    <p class="pub-desc">Team effort to reconstruct time‑varying 3D density and temperature of the corona using a NeRF‑style approach.</p>
+    <p class="pub-authors">B. Isola, <strong>G. Bardi</strong>, R. Jarolim, B. Tremblay, A. Muñoz‑Jaramillo, et&nbsp;al.</p>
+    <p class="pub-venue"><a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1558669" target="_blank" rel="noopener">American Geophysical Union (AGU), 2024 — abstract</a> · <a href="https://fdl.ai/" target="_blank" rel="noopener">FDL (program)</a></p>
+  </div>
+</article>
 
-  <!-- TALKS -->
-  <section id="talks" class="section">
-    <h2>Selected Talks & Outreach</h2>
-    <ul class="list">
-      <li><span class="pill bold">AGU</span> Oral — MEGS‑AI; From Space to Sea</li>
-      <li><span class="pill bold">IAC</span> Interactive — Physics‑informed twins for lunar rovers</li>
-      <li>Invited — <span class="pill bold">SwRI</span> (Southwest Research Institute) — SWOT ML</li>
-      <li>Invited — <span class="pill bold">NASA JSC</span> ROI Lab</li>
-      <li>Defense Innovation Forum (Paris)</li>
-    </ul>
-  </section>
+<article class="pub"><a class="pub-thumb" href="projects/lunar-fm.html"><img src="assets/p-moonfm.svg" alt="Lunar FM"></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="projects/lunar-fm.html">Lunar Foundation Model</a></h3>
+    <p class="pub-desc">Team project to unify GRAIL, LRO/LOLA, MiniRF, Clementine into a queryable foundation model for lunar science and operations.</p>
+    <p class="pub-authors"><strong>G. Bardi</strong>, team collaborators</p>
+    <p class="pub-venue"><a href="https://lunarlab.ai/" target="_blank" rel="noopener">LunarLab.ai</a> · Publications in progress</p>
+  </div>
+</article>
 
-  <!-- AWARDS -->
-  <section id="awards" class="section">
-    <h2>Awards</h2>
-    <ul class="list">
-      <li><span class="pill bold">NASA JPL</span> Spotlight Technology Award — computer vision for SWOT internal waves.</li>
-      <li><span class="pill bold">ESA · CNES</span> Fellowship — ISU Space Studies Program.</li>
-      <li><span class="pill bold">Airbus</span> Innovation Awards (2014, 2015).</li>
-    </ul>
-  </section>
+<div class="cat">European Space Agency</div>
+<article class="pub"><a class="pub-thumb" href="projects/esa-spectra.html"><img src="assets/p-esa-spectra.svg" alt="ESA VNIR Spectral Classifier"></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="projects/esa-spectra.html">Moon mineral classification from VNIR spectroscopy</a></h3>
+    <p class="pub-desc">1D convolutional classifier for spectrometer time‑series to support astronaut sampling; improved accuracy and reduced variance vs. a prior CNN baseline. Report is internal/confidential.</p>
+    <p class="pub-authors"><strong>G. Bardi</strong></p>
+    <p class="pub-venue">European Astronaut Centre (ESA), 2022 — internal report.</p>
+  </div>
+</article>
 
-  <!-- CONTACT / FOOTER -->
-  <section id="contact" class="footer">
-    <p>© <span id="year"></span> Gautier Bardi de Fourtou — Email: <a href="mailto:gautier.bardidefourtou@gmail.com">gautier.bardidefourtou@gmail.com</a></p>
-  </section>
+<div class="cat">International Space University</div>
+<article class="pub"><a class="pub-thumb" href="projects/starship-habitat.html"><img src="assets/p-starship.svg" alt="Starship Habitat"></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="projects/starship-habitat.html">From spacecraft to space habitat: Starship HLS as a permanent lunar base</a></h3>
+    <p class="pub-desc">Feasibility study to convert HLS into a long‑term lunar habitat, covering structural, life‑support, human‑factors and ops considerations.</p>
+    <p class="pub-authors"><strong>G. Bardi</strong>, S. Monat, A. Abdin, et&nbsp;al.</p>
+    <p class="pub-venue"><a href="https://starship1.onuniverse.com/" target="_blank" rel="noopener">Project webpage</a> · IAC 2021–2023</p>
+  </div>
+</article>
+
+</section>
+
+<section id="talks" class="section"><h2>Selected Talks & Outreach</h2><ul class="list">
+  <li>AGU 2024 — Oral: MEGS‑AI; From Space to Sea</li>
+  <li>IAC 2024 — Interactive: Physics‑informed twins for lunar rovers</li>
+  <li>Invited — Southwest Research Institute (SWRI): SWOT ML</li>
+  <li>Invited — NASA Johnson Space Center — ROI Lab</li>
+</ul></section>
+
+<section id="awards" class="section"><h2>Awards</h2><ul class="list">
+  <li>NASA JPL Spotlight Technology Award — computer vision for SWOT internal waves (2024).</li>
+  <li>ESA · CNES Fellowship — International Space University Space Studies Program (2021).</li>
+  <li>Airbus Innovation Awards — HMI & multi‑agent software (2014, 2015).</li>
+</ul></section>
+
+<section class="footer"><p>© <span id="year"></span> Gautier Bardi de Fourtou</p></section>
 </main>
-
-<!-- Modals with more detail & links -->
-<div id="modal-sunerf" class="modal" aria-hidden="true">
-  <div class="modal-dialog" role="dialog" aria-modal="true">
-    <button class="close" data-close>&times;</button>
-    <h3>SuNeRFs — 4D Model of the Solar Corona</h3>
-    <p>Multi‑instrument views to reconstruct a time‑varying 3D model of the corona’s electron density and plasma temperature; a physics‑aware NeRF formulation for heliophysics.</p>
-    <p><strong>Institution:</strong> MIT, FDL</p>
-    <p><strong>Outcomes:</strong> <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1681814" target="_blank" rel="noopener">AGU 2024 abstract</a></p>
-  </div>
-</div>
-
-<div id="modal-solitons" class="modal" aria-hidden="true">
-  <div class="modal-dialog" role="dialog" aria-modal="true">
-    <button class="close" data-close>&times;</button>
-    <h3>From Space to Sea — Internal Waves in SWOT</h3>
-    <p>CV pipeline to detect and track internal waves (solitons) across SWOT swaths, enabling more scalable ocean feature studies.</p>
-    <p><strong>Institution:</strong> NASA JPL, MIT</p>
-    <p><strong>Outcomes:</strong> <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1706755" target="_blank" rel="noopener">AGU 2024 oral</a> · <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1655008" target="_blank" rel="noopener">AGU 2024 abstract</a> · JPL Spotlight Award</p>
-  </div>
-</div>
-
-<div id="modal-rover" class="modal" aria-hidden="true">
-  <div class="modal-dialog" role="dialog" aria-modal="true">
-    <button class="close" data-close>&times;</button>
-    <h3>Lunar Rover Motion — Physics‑Informed ML & Twins</h3>
-    <p>Digital twins in Omniverse with FEM ground truth used to train motion predictors that preserve physical plausibility on granular terrains.</p>
-    <p><strong>Institution:</strong> NASA JPL</p>
-    <p><strong>Outcomes:</strong> <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1558669" target="_blank" rel="noopener">AGU 2024 abstract</a>, <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1581889" target="_blank" rel="noopener">AGU 2024 abstract</a>, IAC 2024 interactive</p>
-  </div>
-</div>
-
-<div id="modal-moonfm" class="modal" aria-hidden="true">
-  <div class="modal-dialog" role="dialog" aria-modal="true">
-    <button class="close" data-close>&times;</button>
-    <h3>Lunar Foundation Model — Unified Lunar Datasets</h3>
-    <p>Unifying GRAIL, LRO/LOLA, MiniRF, Clementine into a queryable foundation model for lunar science and mission ops.</p>
-    <p><strong>Institution:</strong> FDL, NASA, ESA</p>
-    <p><strong>Outcomes:</strong> <a href="https://frontierdevelopmentlab.org/" target="_blank" rel="noopener">FDL program</a></p>
-  </div>
-</div>
-
-<div id="modal-megsai" class="modal" aria-hidden="true">
-  <div class="modal-dialog" role="dialog" aria-modal="true">
-    <button class="close" data-close>&times;</button>
-    <h3>MEGS‑AI — EUV Spectrum Estimation from AIA</h3>
-    <p>Estimating the EUV spectrum from SDO/AIA imagery using ML where direct MEGS coverage is not available.</p>
-    <p><strong>Institution:</strong> MIT</p>
-    <p><strong>Outcomes:</strong> <a href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1681814" target="_blank" rel="noopener">AGU 2024 abstract</a></p>
-  </div>
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+  // Smooth auto slider
+  const wrap=document.getElementById('carousel');
+  const track=document.getElementById('track');
+  const cards=track.querySelectorAll('a');
+  let index=0;
+  function show(i){ track.style.transform = `translateX(-${i*32}%` + `)`; }
+  function next(){ index=(index+1)%cards.length; show(index); }
+  function prev(){ index=(index-1+cards.length)%cards.length; show(index); }
+    document.getElementById('next').addEventListener('click', ()=>{ stop(); next(); });
+  document.getElementById('prev').addEventListener('click', ()=>{ stop(); prev(); });
+        
+});
+</script>
+</body></html>
