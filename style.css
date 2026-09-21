@@ -42,8 +42,8 @@ a:hover{text-decoration:underline}
 .list{list-style:none;margin:0;padding:0}
 .list li{padding:6px 0}
 .footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
-.toggle{margin-top:10px;font:inherit;padding:6px 10px;border-radius:6px;border:1px solid var(--border);background:#fff;cursor:pointer}
-.toggle:hover{background:#f6f7f9}
+.toggle,.bio-toggle{margin-top:10px;font:inherit;padding:6px 10px;border-radius:6px;border:1px solid var(--border);background:#fff;cursor:pointer}
+.toggle:hover,.bio-toggle:hover{background:#f6f7f9}
 .more-item{display:none}
 /* Modal */
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.35);display:none;align-items:center;justify-content:center;padding:20px}
@@ -61,3 +61,14 @@ a:hover{text-decoration:underline}
 .carousel-arrow.left{left:8px}
 .carousel-arrow.right{right:8px}
 @media(max-width:760px){.carousel-track a{flex:0 0 200px}.carousel-track img{width:200px}}
+
+/* Bio: first paragraph always visible, the rest behind Read more.
+   The collapsed state keeps one line of the second paragraph showing, muted
+   and fading out at the right, so there is something to read past. The link
+   row sits outside this block and stays visible in both states. */
+.summary{text-align:justify;margin:0 0 12px}
+.summary-more{max-height:1.6em;overflow:hidden;color:var(--muted);
+  -webkit-mask-image:linear-gradient(90deg,#000 62%,transparent 100%);
+  mask-image:linear-gradient(90deg,#000 62%,transparent 100%)}
+.summary-more.open{max-height:none;color:inherit;-webkit-mask-image:none;mask-image:none}
+.bio-toggle{margin-top:2px;margin-bottom:8px}

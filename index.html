@@ -19,8 +19,11 @@
     </div>
     <p class="subtitle">AI for outer space exploration · MIT AeroAstro (PhD student) · Former NASA JPL Visiting Student Researcher</p>
     <p class="summary">I'm a PhD student at MIT AeroAstro, advised by Dr. Dava Newman and Dr. Daniel Varon. My interests sit at the intersection of artificial intelligence and space exploration, from remote sensing and Earth observation to autonomy for planetary exploration.</p>
-    <p class="summary">I've worked on projects spanning mineral classification from VNIR spectra at ESA European Astronaut Centre to physics-informed machine learning for lunar rover motion prediction at NASA JPL. Also at JPL I developed computer vision to detect internal waves in SWOT ocean imagery, work that earned a JPL Spotlight Technology Award. At Frontier Development Lab I contributed to Lunar-FM, the first AI foundation model for Moon exploration.</p>
-    <p class="summary">I'm an AI and Aerospace Engineer with an industry background in software and test engineering. I also hold a second Master's specialized in Artificial Intelligence from Mines Paris / PSL University. My research combines deep learning, computer vision, physics-informed machine learning and systems engineering to solve complex challenges in space science and exploration.</p>
+    <div class="summary-more" id="bioMore">
+      <p class="summary">I've worked on projects spanning mineral classification from VNIR spectra at ESA European Astronaut Centre to physics-informed machine learning for lunar rover motion prediction at NASA JPL. Also at JPL I developed computer vision to detect internal waves in SWOT ocean imagery, work that earned a JPL Spotlight Technology Award. At Frontier Development Lab I contributed to Lunar-FM, the first AI foundation model for Moon exploration.</p>
+      <p class="summary">I'm an AI and Aerospace Engineer with an industry background in software and test engineering. I also hold a second Master's specialized in Artificial Intelligence from Mines Paris / PSL University. My research combines deep learning, computer vision, physics-informed machine learning and systems engineering to solve complex challenges in space science and exploration.</p>
+    </div>
+    <button class="bio-toggle" type="button" aria-expanded="false" aria-controls="bioMore">Read more ▾</button>
     <p class="linkrow"><a href="https://scholar.google.com/citations?user=Dm0hKWoAAAAJ" target="_blank" rel="noopener">Google Scholar</a> ·
     <a href="https://www.researchgate.net/profile/Gautier-Bardi-De-Fourtou" target="_blank" rel="noopener">ResearchGate</a></p>
   </div>
@@ -136,17 +139,19 @@
 <script>
 document.addEventListener('DOMContentLoaded',()=>{
   const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
-  // Smooth auto slider
-  const wrap=document.getElementById('carousel');
-  const track=document.getElementById('track');
-  const cards=track.querySelectorAll('a');
-  let index=0;
-  function show(i){ track.style.transform = `translateX(-${i*32}%` + `)`; }
-  function next(){ index=(index+1)%cards.length; show(index); }
-  function prev(){ index=(index-1+cards.length)%cards.length; show(index); }
-    document.getElementById('next').addEventListener('click', ()=>{ stop(); next(); });
-  document.getElementById('prev').addEventListener('click', ()=>{ stop(); prev(); });
-        
+
+  // Bio: reveal the rest of the presentation. The link row is deliberately
+  // outside #bioMore, so Google Scholar and ResearchGate stay visible whether
+  // the bio is collapsed or open.
+  const more=document.getElementById('bioMore');
+  const btn=document.querySelector('.bio-toggle');
+  if(more && btn){
+    btn.addEventListener('click',()=>{
+      const open=more.classList.toggle('open');
+      btn.textContent=open?'Read less \u25b4':'Read more \u25be';
+      btn.setAttribute('aria-expanded',String(open));
+    });
+  }
 });
 </script>
 </body></html>
